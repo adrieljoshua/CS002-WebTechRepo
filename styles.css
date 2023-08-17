@@ -1,5 +1,5 @@
 .welcomeImage {
-    margin-top: 80px;
+    margin-top: 85px;
     display: flex;
     justify-content: center;
 }
@@ -30,11 +30,11 @@
   color: white;
   font-weight: bold;
   transition: color 0.2s;
-  font-family:;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
   
 }
 
-.navbar a: hover {
+.navbar a:hover {
   color: gray;
 }
