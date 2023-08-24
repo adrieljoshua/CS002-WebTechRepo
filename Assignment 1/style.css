@@ -1,0 +1,83 @@
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px;
+  }
+
+  .button:hover {
+    background-color: darkblue;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    align-items: center;
+    
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: larger;
+    margin: 50px;
+}
+
+.rotated{
+  transform: rotate(45deg);
+}
+
+.scaled {
+  transform:scale(2,2)
+}
+
+.skew{
+  transform: skew(20deg, 10deg);
+}
+
+.circle{
+  width: 100px;
+    height: 100px;
+    background-color: rgb(43, 125, 226);
+    text-align: center;
+    font-size: larger;
+    margin: 50px;
+    border-radius: 50%;
+    padding:20px;
+}
+
+.spin:hover{
+  animation: spin 1s linear infinite
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+.hover-scale:hover{
+  transition: 2s;
+  transform: scale(2,2);
+}
+
+.hover-color:hover{
+  transition-duration: 0.5s;
+  background-color: pink;
+}
+
+.hover-move:hover{
+  transition: 1s;
+  transform: translate(-25%,-100%);
+}
