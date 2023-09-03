@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <div class="form">
-    <form action="">
-      <label for="fname">Enter your Name</label>
-      <input type="text" id="fname" name="fname" /><br /><br />
-      <label>Specify Age</label><br />
-      <div class="slider">
-        <input
-          type="range"
-          min="0"
-          max="150"
-          value="50"
-          oninput="rangeValue.innerText = this.value"
-        />
-        <p id="rangeValue">0</p>
-      </div>
-    </form>
-  </div>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form action="">
+        <div class="name-collection">
+          <label for="fname">Enter your Name</label>
+          <input type="text" id="fname" name="fname" /> <br /><br />
+        </div>
+        <br />
+
+        <div class="age-collection">
+          <label>Specify Age</label>
+          <div class="slider">
+            <input
+              type="range"
+              min="0"
+              max="150"
+              value="50"
+              oninput="rangeValue.innerText = this.value"
+            />
+            <p id="rangeValue">0</p>
+          </div>
+        </div>
+        <br />
+        <div class="gender-collection">
+          <p>Select Gender:</p>
+          <input type="radio" name="gender" id="male" value="Male" />
+          <label for="male">Male</label><br />
+          <input type="radio" name="gender" id="female" value="Female" />
+          <label for="female">Female</label><br />
+          <input type="radio" name="gender" id="other" value="Other" />
+          <label for="Other">Other</label><br />
+          <input
+            type="radio"
+            name="gender"
+            id="pnts"
+            value="Prefer Not To Say"
+          />
+          <label for="pnts">Prefer Not To Say</label><br />
+        </div>
+        <br />
+        <div class="address-collection">
+          <label for="email">Enter your Email:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
