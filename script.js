@@ -23,6 +23,6 @@ function validateData() {
     if (!userFound) {
         alert("INCORRECT ")
     } else {
-        window.location = "https://www.google.co.in/";
+        alert("Correct Credentials.")
     }
 }
